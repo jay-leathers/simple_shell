@@ -3,13 +3,7 @@
 
 #include <fcntl.h>
 #include <signal.h>
-#inclFile Edit Options Buffers Tools C Help
-#ifndef _MAIN_H_
-#define _MAIN_H_
-
-#include <fcntl.h>
-#include <signal.h>
-#inclde <sys/types.h>
+#include <sys/types.h>
 #include <sys/stat.h>
 #include <sys/wait.h>
 #include <stdlib.h>
@@ -20,25 +14,7 @@
 #define END_OF_FILE -2
 #define EXIT -3
 
-
 /* Global environemnt */
-
-extern char **environ;
-
--UU-:**--F1  main.h         Top L6    Git-main  (C/*l Abbrev) ------------------de <sys/types.h>
-#include <sys/stat.h>
-#include <sys/wait.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <errno.h>
-#include <stdio.h>
-
-#define END_OF_FILE -2
-#define EXIT -3
-
-
-/* Global environemnt */
-
 extern char **environ;
 
 /* Global program name */
@@ -54,7 +30,6 @@ int hist;
 */
 
 typedef struct list_s
-
 {
   char *dir;
   struct list_s *next;
@@ -67,7 +42,6 @@ typedef struct list_s
 */
 
 typedef struct builtin_s
-
 {
   char *name;
   int (*f)(char **argv, char **front);
@@ -82,7 +56,6 @@ typedef struct builtin_s
 */
 
 typedef struct alias_s
-
 {
   char *name;
   char *value;
@@ -165,5 +138,4 @@ void help_unsetenv(void);
 void help_history(void);
 
 int proc_file_commands(char *file_path, int *exe_ret);
-
 #endif
