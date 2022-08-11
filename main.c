@@ -1,3 +1,27 @@
+File Edit Options Buffers Tools C Help
+#include "main.h"
+
+
+void sig_handler(int sig);
+int execute(char **args, char **front);
+
+/**
+ * sig_handler - Prints a new prompt upon a signal.
+ * @sig: The signal.
+ */
+
+void sig_handler(int sig)
+
+{
+
+  char *new_prompt = "\n$ ";
+
+
+
+  (void)sig;
+
+  -UU-:----F1  main.c         Top L1    Git-main  (C/*l Abbrev) ------------------
+For information about GNU Emacs and the GNU system, type C-h C-a.
 #include "main.h"
 
 
