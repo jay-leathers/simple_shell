@@ -1,3 +1,27 @@
+File Edit Options Buffers Tools C Help
+#include "main.h"
+
+
+
+char *_strchr(char *s, char c);
+
+int _strspn(char *s, char *accept);
+
+int _strcmp(char *s1, char *s2);
+
+int _strncmp(const char *s1, const char *s2, size_t n);
+
+
+
+/**
+
+ * _strchr - Locates a character in a string.
+
+ * @s: The string to be searched.
+
+ * @c: The character to be located.
+-UU-:----F1  str_fun_2.c    Top L1    Git-main  (C/*l Abbrev) ------------------
+For information about GNU Emacs and the GNU system, type C-h C-a.
 #include "main.h"
 
 
